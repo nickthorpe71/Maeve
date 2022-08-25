@@ -1,8 +1,4 @@
-## TODO
-
--   [ ] handle uneven populations
-
-# Problems To Solved
+# Problems Solved
 
 1. OneMax
 2. Speller
@@ -31,20 +27,3 @@
 
 -   For each problem, show the classical solution with benchmarks and compare to the Maeve solution with benchmarks.
 -   Label each problem with: **Binary**, **Permutation**, **Real-Value** or any other genotypes covered.
-
-# Maeve Docs
-
-What is Maeve? A framework to use parameterized inputs to create and utilize genetic algorithms easily. The idea is it's easy to experiment with different parameters, observe the results, then when you've found the parameters that work best for your solution, run the framework in performance mode to calculate at a very efficient rate.
-
-### What is a Genetic Algorithm?
-
-What is a genetic algorithm?
-What are the pieces of a genetic algorithm?
-
-### What is the Flow of a Genetic Algorithm?
-
-### How to Use Maeve
-
-### Example Input Params
-
-### Example Problems
