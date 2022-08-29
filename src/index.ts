@@ -1,6 +1,6 @@
-import { sleep, chunkEvery } from "../../utils/index";
+import { sleep, chunkEvery } from "./utils/index";
 import { range, flatten } from "lodash";
-import logger from "../../utils/logger";
+import logger from "./utils/logger";
 
 import Problem from "./modules/Problem";
 import Chromosome, { stringifyChromosome } from "./modules/Chromosome";
