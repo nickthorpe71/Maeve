@@ -1,6 +1,6 @@
-import Chromosome from "./Chromosome";
+import { Chromosome } from "../../index";
 
-export default interface Problem<T> {
+export interface Problem<T> {
     genotype: () => Chromosome<T>;
     fitnessFunction: (chromosome: Chromosome<T>) => number;
     terminationCriteria: (

@@ -1,16 +1,19 @@
-import { sleep, chunkEvery } from "./utils/index";
+import { sleep, chunkEvery } from "./src/utils/index";
 import { range, flatten } from "lodash";
-import logger from "./utils/logger";
+import logger from "./src/utils/logger";
 
-import Problem from "./modules/Problem";
-import Chromosome, { stringifyChromosome } from "./modules/Chromosome";
+import { Problem } from "./src/modules/Problem";
+import { Chromosome, stringifyChromosome } from "./src/modules/Chromosome";
 
-import { selectionStrategy } from "./toolbox/selection";
-import { crossoverStrategy } from "./toolbox/crossover";
-import { mutationStrategy } from "./toolbox/mutation";
-import { reinsertionStrategy } from "./toolbox/reinsertion";
+import { selectionStrategy } from "./src/toolbox/selection";
+import { crossoverStrategy } from "./src/toolbox/crossover";
+import { mutationStrategy } from "./src/toolbox/mutation";
+import { reinsertionStrategy } from "./src/toolbox/reinsertion";
 
-import StatsCache, { IStatsCache, IStatsEntry } from "./services/statsCache";
+import StatsCache, {
+    IStatsCache,
+    IStatsEntry,
+} from "./src/services/statsCache";
 
 // Statistics cache for keeping track generational statistics.
 function updateStats<T>(
@@ -266,9 +269,13 @@ export interface HyperParameters {
     coolingRate: number;
 }
 
-// exports
-export { selectionStrategy } from "./toolbox/selection";
-export { crossoverStrategy } from "./toolbox/crossover";
-export { mutationStrategy } from "./toolbox/mutation";
-export { reinsertionStrategy } from "./toolbox/reinsertion";
-export { genotype } from "./toolbox/genotype";
+// EXPORTS
+// Tools
+export { selectionStrategy } from "./src/toolbox/selection";
+export { crossoverStrategy } from "./src/toolbox/crossover";
+export { mutationStrategy } from "./src/toolbox/mutation";
+export { reinsertionStrategy } from "./src/toolbox/reinsertion";
+export { genotype } from "./src/toolbox/genotype";
+// Modules
+export * from "./src/modules/Chromosome";
+export * from "./src/modules/Problem";

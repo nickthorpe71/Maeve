@@ -1,4 +1,4 @@
-import Chromosome, { cloneChromosome } from "../modules/Chromosome";
+import { Chromosome, cloneChromosome } from "../../index";
 import { shuffle, sum, range } from "lodash";
 
 /**
@@ -68,12 +68,3 @@ export const mutationStrategy = {
     bitFlip,
     gaussian,
 };
-
-const testCH: Chromosome<number> = {
-    genes: [1.2, 2.3, 3.4, 4.5],
-    fitness: 0,
-    size: 4,
-    age: 0,
-};
-
-gaussian(testCH);

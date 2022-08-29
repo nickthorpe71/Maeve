@@ -1,6 +1,5 @@
-import Chromosome from "../modules/Chromosome";
-import { shuffle } from "lodash";
-import { maxBy, range } from "lodash";
+import { Chromosome } from "../../index";
+import { shuffle, maxBy, range } from "lodash";
 
 function elitism<T>(
     population: Chromosome<T>[],

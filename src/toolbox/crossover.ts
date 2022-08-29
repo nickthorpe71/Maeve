@@ -1,4 +1,4 @@
-import Chromosome from "../modules/Chromosome";
+import { Chromosome } from "../../index";
 import { random } from "lodash";
 
 /**

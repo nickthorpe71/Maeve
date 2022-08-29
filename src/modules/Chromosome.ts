@@ -1,13 +1,11 @@
-export default interface Chromosome<T> {
+export interface Chromosome<T> {
     genes: T[];
     size: number;
     fitness: number;
     age: number;
 }
 
-export function cloneChromosome<T>(
-    chromosome: Chromosome<T>,
-): Chromosome<T> {
+export function cloneChromosome<T>(chromosome: Chromosome<T>): Chromosome<T> {
     return {
         genes: chromosome.genes.slice(),
         size: chromosome.size,
