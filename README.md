@@ -123,7 +123,35 @@ main();
 
 ```
 
+### Problem Definition
+
+#### Genotypes
+
+#### Fitness
+
+#### Termination Criteria
+
+### Hyper Params
+
+### Framework Options
+
+### Strategies
+
+#### Crossover
+
+#### Selection
+
+#### Mutation
+
+#### Reinsertion
+
 ## Road Map
+
+[ ] add ANN capabilities / matrix genotype
+[ ] add tree genotypes
+[ ] performance
+[ ] benchmark / profile
+[ ] extract parts to c t increase efficiency
 
 ## Keep in touch
 
