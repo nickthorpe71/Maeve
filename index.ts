@@ -159,6 +159,8 @@ async function evolve<T>(
     startTime: number,
     statsCache: IStatsCache
 ): Promise<{ [key: string]: Chromosome<T> | IStatsCache }> {
+    if (!options.hyperParams.coolingRate) options.hyperParams.coolingRate = 1;
+
     const populationClone = population.slice(); // for immutability
     const evaluatedPopulation = evaluate<T>(
         populationClone,
@@ -266,7 +268,7 @@ export interface FrameworkOptions<T> {
 export interface HyperParameters {
     populationSize: number;
     mutationProbability: number;
-    coolingRate: number;
+    coolingRate?: number;
 }
 
 // EXPORTS
