@@ -147,11 +147,11 @@ main();
 
 ## Road Map
 
-[ ] add ANN capabilities / matrix genotype
-[ ] add tree genotypes
-[ ] performance
-[ ] benchmark / profile
-[ ] extract parts to c t increase efficiency
+-   [ ] add ANN capabilities / matrix genotype
+-   [ ] add tree genotypes
+-   [ ] performance
+-   [ ] benchmark / profile
+-   [ ] extract parts to c t increase efficiency
 
 ## Keep in touch
 
