@@ -1,5 +1,5 @@
 {
-    "name": "maeve",
+    "name": "rayleigh",
     "version": "0.0.1",
     "description": "Open source, extendable, versatile framework for prototyping and applying genetic algorithms.",
     "main": "lib/index.js",
@@ -8,14 +8,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/nickthorpe71/Maeve.git"
+        "url": "git+https://github.com/nickthorpe71/Rayleigh.git"
     },
     "author": "Nick Thorpe",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/nickthorpe71/Maeve/issues"
+        "url": "https://github.com/nickthorpe71/Rayleigh/issues"
     },
-    "homepage": "https://github.com/nickthorpe71/Maeve#readme",
+    "homepage": "https://github.com/nickthorpe71/Rayleigh#readme",
     "devDependencies": {
         "@types/lodash": "^4.14.168",
         "@types/node": "^18.0.0",

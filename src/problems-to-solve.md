@@ -25,5 +25,5 @@
 
 ## Process
 
--   For each problem, show the classical solution with benchmarks and compare to the Maeve solution with benchmarks.
+-   For each problem, show the classical solution with benchmarks and compare to the Rayleigh solution with benchmarks.
 -   Label each problem with: **Binary**, **Permutation**, **Real-Value** or any other genotypes covered.

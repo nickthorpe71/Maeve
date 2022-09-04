@@ -1,4 +1,4 @@
-# Maeve
+# Rayleigh
 
 Open source, extendable, versatile framework for prototyping and applying genetic algorithms.
 
@@ -13,7 +13,7 @@ A framework to use parameterized inputs to create and utilize genetic algorithms
 The goal of one max is to create an array of 1s, the more 1's in the array the higher the fitness. This is a very simple example to show how easy it can be to set up a genetic algorithm.
 
 ```js
-import Maeve, { genotype, Chromosome, Problem } from "maeve";
+import Rayleigh, { genotype, Chromosome, Problem } from "rayleigh";
 
 const chromosomeLength = 100;
 
@@ -26,7 +26,7 @@ const problemDefinition: Problem<number> = {
         bestFitnessChromosome.fitness >= 0.6,
 };
 
-Maeve(problemDefinition, {
+Rayleigh(problemDefinition, {
     showLogStream: true,
     hyperParams: {
         populationSize: 200,
@@ -40,7 +40,7 @@ Maeve(problemDefinition, {
 The knapsack problem is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.
 
 ```js
-import Maeve, {
+import Rayleigh, {
     FrameworkOptions,
     HyperParameters,
     genotype,
@@ -49,7 +49,7 @@ import Maeve, {
     mutationStrategy,
     Chromosome,
     Problem,
-} from "maeve";
+} from "rayleigh";
 
 const itemValues = [6, 5, 8, 9, 6, 7, 3, 1, 2, 6];
 const itemWeights = [10, 6, 8, 7, 10, 9, 7, 11, 6, 8];
@@ -103,7 +103,7 @@ const options: FrameworkOptions<number> = {
 };
 
 async function main() {
-    const result = await Maeve(problemDefinition, options);
+    const result = await Rayleigh(problemDefinition, options);
     const cargoWeights = [10, 6, 8, 7, 10, 9, 7, 11, 6, 8];
     const bestSolution: Chromosome<number> = result.best as Chromosome<number>;
     const totalCargoWeight = bestSolution.genes
