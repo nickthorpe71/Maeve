@@ -6,6 +6,10 @@ A framework to use parameterized inputs to create and utilize genetic algorithms
 
 ## Install
 
+```
+npm install rayleigh
+```
+
 ## Examples
 
 #### OneMax
@@ -125,6 +129,8 @@ main();
 
 ### Problem Definition
 
+-   list defaults and give examples
+
 #### Genotypes
 
 #### Fitness
@@ -133,9 +139,15 @@ main();
 
 ### Hyper Params
 
+-   list defaults and give examples
+
 ### Framework Options
 
+-   list defaults and give examples
+
 ### Strategies
+
+-   list defaults and give examples
 
 #### Crossover
 
