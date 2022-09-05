@@ -34,7 +34,39 @@ function permutation<T>(size: number, pool: T[]): Chromosome<T> {
     return newChromosome;
 }
 
-function realValue() {}
+/**
+ * Creates a random chromosome from where each gene is between the given range.
+ * @param size - size of the chromosome
+ * @param max - maximum value for each gene (inclusive)
+ * @param min - min value for each gene (inclusive)
+ */
+function realValue(size: number, max: number, min: number): Chromosome<number> {
+    const newChromosome: Chromosome<number> = {
+        genes: range(0, size).map(() =>
+            Math.floor(Math.random() * (max - min + 1) + min)
+        ),
+        size: size,
+        fitness: 0,
+        age: 0,
+    };
+
+    return newChromosome;
+}
+
+/**
+ * Creates a random chromosome from where each gene is a value between 0 and 1.
+ * @param size - size of the chromosome
+ */
+function weights(size: number): Chromosome<number> {
+    const newChromosome: Chromosome<number> = {
+        genes: range(0, size).map(() => Math.random()),
+        size: size,
+        fitness: 0,
+        age: 0,
+    };
+
+    return newChromosome;
+}
 
 /**
  * Creates a random chromosome from given pool.
@@ -55,10 +87,9 @@ function general<T>(size: number, pool: T[]): Chromosome<T> {
 
 function graph() {}
 
-function neuralNetwork() {}
-
 export const genotype = {
     binary,
+    realValue,
     permutation,
     general,
 };
