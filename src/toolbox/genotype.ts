@@ -90,6 +90,7 @@ function graph() {}
 export const genotype = {
     binary,
     realValue,
+    weights,
     permutation,
     general,
 };
