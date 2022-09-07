@@ -2,10 +2,7 @@
     "name": "rayleigh",
     "version": "0.0.7",
     "description": "Open source, extendable, versatile framework for prototyping and applying genetic algorithms.",
-    "main": "lib/index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
+    "main": "./index.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/nickthorpe71/Rayleigh.git"
@@ -26,7 +23,6 @@
     "dependencies": {
         "dayjs": "^1.11.3",
         "lodash": "^4.17.21",
-        "nodemon": "^2.0.16",
         "pino": "^8.0.0",
         "pino-pretty": "^8.0.0"
     }
