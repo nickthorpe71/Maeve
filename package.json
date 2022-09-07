@@ -1,6 +1,6 @@
 {
     "name": "rayleigh",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Open source, extendable, versatile framework for prototyping and applying genetic algorithms.",
     "main": "./dist/index.js",
     "repository": {
