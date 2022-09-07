@@ -2,7 +2,7 @@
     "name": "rayleigh",
     "version": "0.0.7",
     "description": "Open source, extendable, versatile framework for prototyping and applying genetic algorithms.",
-    "main": "./index.js",
+    "main": "./dist/index.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/nickthorpe71/Rayleigh.git"
